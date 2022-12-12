@@ -68,4 +68,12 @@ model VerificationToken {
 model Man {
   id  String   @id @default(cuid())
   name String
+  horse String @default("")
+}
+
+model Women{
+  id  String   @id @default(cuid())
+  name String 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
